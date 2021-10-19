@@ -10,6 +10,8 @@ import UIKit
 
 class ShoppingListTableViewController: UITableViewController {
     
+    var productViewModel: ProductViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "ShoppingList"

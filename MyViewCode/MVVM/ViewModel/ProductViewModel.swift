@@ -9,13 +9,21 @@ import Foundation
 
 struct ProductViewModel {
     
-    let name: String
-    let quantity: Double
-    let type: ProductType
+    private(set) var product: Product
     
     init(_ product: Product) {
-        self.name = product.name
-        self.quantity = product.quantity
-        self.type = product.type
+        self.product = product
+    }
+    
+    var name: String {
+        return self.product.name
+    }
+    
+    var quantity: Double {
+        return self.product.quantity
+    }
+    
+    var type: String {
+        return self.product.type.rawValue
     }
 }

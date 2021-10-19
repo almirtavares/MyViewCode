@@ -13,8 +13,8 @@ struct Product {
     let type: ProductType
 }
 
-enum ProductType {
-    case grams
-    case kilos
-    case units
+enum ProductType: String {
+    case grams = "g"
+    case kilos = "Kg"
+    case units = "un"
 }
